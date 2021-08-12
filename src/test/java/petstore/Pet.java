@@ -2,8 +2,6 @@
 package petstore;
 
 // 2 - Bibliotecas
-
-
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -12,6 +10,8 @@ import java.nio.file.Paths;
 
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.isA;
 
 // 3 - Classe
 public class Pet {
@@ -28,12 +28,8 @@ public class Pet {
     public void incluirPet() throws IOException {
         String jsonBody = lerJson("db/pet1.json");
 
-        // Sintaxe Gherkin
-        // Dado - Quando - Então
-        // Given - When - Then
-
         given() // Dado
-                .contentType("application/json") // comum em API REST - antigas era "text/xml"
+                .contentType("application/json") // comum em API REST - antigas usavam "text/xml"
                 .log().all()
                 .body(jsonBody)
         .when()  // Quando
@@ -41,6 +37,8 @@ public class Pet {
         .then()  // Então
                 .log().all()
                 .statusCode(200)
+                .body("name", is("Quenn"))
+                .body("status", is("available") )
         ;
 
     }

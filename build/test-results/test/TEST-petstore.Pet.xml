@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T01:40:59" hostname="DESKTOP-H87EVHO" time="3.069">
+<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T23:26:43" hostname="DESKTOP-H87EVHO" time="3.373">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="3.069"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="3.373"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -15,12 +15,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 0,
+    "id": 12082021370,
     "category": {
         "id": 1,
         "name": "dog"
     },
-    "name": "Snoopy",
+    "name": "Quenn",
     "photoUrls": [
         "string"
     ],
@@ -33,7 +33,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Thu, 12 Aug 2021 01:41:02 GMT
+Date: Thu, 12 Aug 2021 23:26:45 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -43,12 +43,12 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000001117979,
+    "id": 12082021370,
     "category": {
         "id": 1,
         "name": "dog"
     },
-    "name": "Snoopy",
+    "name": "Quenn",
     "photoUrls": [
         "string"
     ],
