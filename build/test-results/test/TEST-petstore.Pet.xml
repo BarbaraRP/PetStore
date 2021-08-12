@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T23:26:43" hostname="DESKTOP-H87EVHO" time="3.373">
+<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T23:38:49" hostname="DESKTOP-H87EVHO" time="3.337">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="3.373"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="3.337"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -33,7 +33,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Thu, 12 Aug 2021 23:26:45 GMT
+Date: Thu, 12 Aug 2021 23:38:51 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
