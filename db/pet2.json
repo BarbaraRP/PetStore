@@ -1,0 +1,18 @@
+{
+  "id": 120820213700,
+  "category": {
+    "id": 1,
+    "name": "dog"
+  },
+  "name": "Quenn",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 20210030,
+      "name": "sta"
+    }
+  ],
+  "status": "sold"
+}

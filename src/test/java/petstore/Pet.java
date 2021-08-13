@@ -34,9 +34,9 @@ public class Pet {
                 .contentType("application/json") // comum em API REST - antigas era "text/xml"
                 .log().all()
                 .body(jsonBody)
-                .when()  // Quando
+        .when()  // Quando
                 .post(uri)
-                    .then()  // Então
+        .then()  // Então
                     .log().all()
                     .statusCode(200)
                     .body("name", is("Quenn"))
@@ -58,9 +58,9 @@ public class Pet {
                 given()
                         .contentType("application/json")
                         .log().all()
-                        .when()
+                .when()
                         .get(uri + "/" + petId)
-                        .then()
+                .then()
                         .log().all()
                         .statusCode(200)
                         .body("name", is("Quenn"))
@@ -70,6 +70,27 @@ public class Pet {
                         .path("category.name")
                 ;
         System.out.println("O token é " + token);
+
+
+
+    }
+    @Test(priority = 3)
+    public void alterarPet() throws IOException {
+        String jsonBody = lerJson("db/pet2.json");
+
+        given()
+                .contentType("application/json")
+                .log().all()
+                .body(jsonBody)
+        .when()
+                .put(uri)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("name", is("Quenn"))
+                .body("status", is("sold"))
+
+        ;
 
 
 
